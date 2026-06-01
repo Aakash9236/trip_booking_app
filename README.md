@@ -1,16 +1,64 @@
-# trip_and_booking
+# Trips & Bookings App
 
-A new Flutter project.
+This is a small Flutter app created for the Flutter Developer Test.
 
-## Getting Started
+The app has 3 screens:
 
-This project is a starting point for a Flutter application.
+- Login Screen
+- Trips List Screen
+- Trip Details Screen
 
-A few resources to get you started if this is your first Flutter project:
+## What it does
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Login
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Email validation
+- Password validation (minimum 6 characters)
+- No real authentication is used
+
+### Trips List
+
+- Shows trips from the provided mock data
+- Search trips by title
+- Displays trip title, date and current status
+
+### Trip Details
+
+- Shows all trip information
+- Status can be updated from the details screen
+- Changes are reflected immediately on the trips list screen
+
+## State Management
+
+GetX is used for state management.
+
+## Packages Used
+
+- get
+
+## Run the project
+
+Install packages:
+
+flutter pub get
+
+Run the app:
+
+flutter run
+
+## Build APK
+
+flutter build apk --release
+
+## Notes
+
+- Mock JSON data is used.
+- No API integration.
+- No local database/storage.
+- Status updates are handled using GetX state management.
+
+## Author
+
+- Aakash Kumar Gupta
+
+Thanks for reviewing the project.
